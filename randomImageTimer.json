@@ -1,0 +1,210 @@
+{
+  "commandText": {
+    "type": "text", 
+    "label": "Associated command:", 
+    "value": "!img", 
+    "group": "General Settings"
+  }, 
+  "permissionLvl": {
+    "type": "dropdown", 
+    "label": "Who can trigger the widget?", 
+    "options": {
+      "streamer": "Streamer", 
+      "mods": "Streamer + Mods", 
+      "everyone": "No restrictions"
+    }, 
+    "value": "mods", 
+    "group": "General Settings"
+  }, 
+  "otherUsers": {
+    "type": "text", 
+    "label": "Additional users (comma separated):", 
+    "value": "", 
+    "group": "General Settings"
+  }, 
+  "triggerInterval": {
+    "type": "number", 
+    "label": "Trigger interval in minutes (0 = off):", 
+    "min": 0, 
+    "value": 0, 
+    "step": 1, 
+    "group": "General Settings"
+  }, 
+  "startTimerPaused": {
+    "type": "checkbox", 
+    "label": "Start paused?", 
+    "value": false, 
+    "group": "General Settings"
+  }, 
+  
+  "imgPool": {
+    "type": "image-input", 
+    "label": "Image Pool:", 
+    "multiple": true, 
+    "group": "Image Settings"
+  }, 
+  "sepImageSettings": {
+    "type": "hidden", 
+    "label": "———————— Options ————————", 
+    "group": "Image Settings"
+  }, 
+  "isDifferentImgEnforced": {
+    "type": "checkbox", 
+    "label": "Enforce different image than current one?", 
+    "value": false, 
+    "group": "Image Settings"
+  }, 
+  "hasFullCycleRepetition": {
+    "type": "checkbox", 
+    "label": "Cycle through all images before repeating?", 
+    "value": false, 
+    "group": "Image Settings"
+  }, 
+  
+  "audioAlert_url": {
+    "type": "sound-input", 
+    "label": "Audio Alert:", 
+    "multiple": false, 
+    "group": "Audio Settings"
+  }, 
+  "audioAlert_vol": {
+    "type": "slider", 
+    "label": "Volume:", 
+    "min": 0, 
+    "max": 100, 
+    "value": 50, 
+    "step": 1, 
+    "group": "Audio Settings"
+  }, 
+  
+  "timerVisualization": {
+    "type": "dropdown", 
+    "label": "Timer visualization:", 
+    "options": {
+      "on": "Enabled", 
+      "off": "Disabled"
+    }, 
+    "value": "on", 
+    "group": "Timer Settings"
+  }, 
+  "fontFamily": {
+    "type": "text", 
+    "label": "Google font family:", 
+    "value": "Roboto", 
+    "group": "Timer Settings"
+  }, 
+  "fontSize": {
+    "type": "number", 
+    "label": "Font size in px:", 
+    "min": 1, 
+    "value": 60, 
+    "step": 1, 
+    "group": "Timer Settings"
+  }, 
+  "fontColor": {
+    "type": "colorpicker", 
+    "label": "Font color:", 
+    "value": "rgba(255, 255, 255, 1.0)", 
+    "group": "Timer Settings"
+  }, 
+  "sepTimerSettings1": {
+    "type": "hidden", 
+    "label": "———————— Options ————————", 
+    "group": "Timer Settings"
+  }, 
+  "padNumbersWithZero": {
+    "type": "checkbox", 
+    "label": "Pad single-digit numbers with 0?", 
+    "value": true, 
+    "group": "Timer Settings"
+  }, 
+  "sepTimerSettings2": {
+    "type": "hidden", 
+    "label": "———————— Margins ————————", 
+    "group": "Timer Settings"
+  }, 
+  "timerMargin_top": {
+    "type": "number", 
+    "label": "Margin top in px:", 
+    "min": 0, 
+    "value": 20, 
+    "step": 1, 
+    "group": "Timer Settings"
+  }, 
+  "timerMargin_right": {
+    "type": "number", 
+    "label": "Margin right in px:", 
+    "min": 0, 
+    "value": 0, 
+    "step": 1, 
+    "group": "Timer Settings"
+  }, 
+  "timerMargin_bottom": {
+    "type": "number", 
+    "label": "Margin bottom in px:", 
+    "min": 0, 
+    "value": 0, 
+    "step": 1, 
+    "group": "Timer Settings"
+  }, 
+  "timerMargin_left": {
+    "type": "number", 
+    "label": "Margin left in px:", 
+    "min": 0, 
+    "value": 0, 
+    "step": 1, 
+    "group": "Timer Settings"
+  }, 
+  
+  "triggerButton": {
+    "type": "button", 
+    "label": "Trigger change", 
+    "value": "trigger", 
+    "group": "Buttons"
+  }, 
+  "pauseButton": {
+    "type": "button", 
+    "label": "Pause / Resume", 
+    "value": "pause", 
+    "group": "Buttons"
+  }, 
+  "resetButton": {
+    "type": "button", 
+    "label": "Reset timer", 
+    "value": "reset", 
+    "group": "Buttons"
+  }, 
+  
+  "testMode": {
+    "type": "dropdown", 
+    "label": "Test mode:", 
+    "options": {
+      "on": "Enabled", 
+      "off": "Disabled"
+    }, 
+    "value": "off", 
+    "group": "Test Mode"
+  }, 
+  "hasColorizedSegments": {
+    "type": "checkbox", 
+    "label": "Colorize segments for visualization?", 
+    "value": true, 
+    "group": "Test Mode"
+  }, 
+  
+  "widgetName": {
+    "type": "hidden", 
+    "value": "RandomImageTimer", 
+    "group": "Test Mode"
+  }, 
+  "widgetAuthor": {
+    "type": "hidden", 
+    "value": "avoeh", 
+    "group": "Test Mode"
+  }, 
+  "widgetVersion": {
+    "type": "hidden", 
+    "value": 1.0, 
+    "group": "Test Mode"
+  }
+}
