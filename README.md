@@ -13,19 +13,19 @@ The widget randomly picks images from an image pool at predetermined time interv
    
    Swaps the current image with a random one.
    
- - `!img n`
+ - `!img n` 
    
    Swaps the current image with the `n`th video of the pool.  
-   The placeholder `n` can be a number between 1 an the total number of images in the pool.
+   The placeholder `n` can be a number between 1 and the total number of images in the pool.
    
- - `!img pause`
+ - `!img pause` 
    
    Pauses the timer.
    
- - `!img resume`
+ - `!img resume` 
    
    Unpauses the timer.
    
- - `!img reset`
+ - `!img reset` 
    
    Resets the timer.
