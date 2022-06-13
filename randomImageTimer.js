@@ -534,7 +534,7 @@ function onWidgetLoad(obj) {
   initializeTimer(
       fieldData.triggerInterval, 
       fieldData.fontFamily, 
-      (fieldData.timerVisualization === 'on'), 
+      (fieldData.timerVisibility === 'visible'), 
       fieldData.padNumbersWithZero, 
       timerMargins);
   

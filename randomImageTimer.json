@@ -77,14 +77,14 @@
     "group": "Audio Settings"
   }, 
   
-  "timerVisualization": {
+  "timerVisibility": {
     "type": "dropdown", 
-    "label": "Timer visualization:", 
+    "label": "Timer is ...", 
     "options": {
-      "on": "Enabled", 
-      "off": "Disabled"
+      "visible": "visible", 
+      "hidden": "hidden"
     }, 
-    "value": "on", 
+    "value": "visible", 
     "group": "Timer Settings"
   }, 
   "fontFamily": {
