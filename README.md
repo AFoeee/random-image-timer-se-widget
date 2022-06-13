@@ -1,11 +1,12 @@
-# RandomImageTimer
-This StreamElements custom widget can be used to further gamificate content (for example, every 20 minutes a new class focus etc).
+# Random Image Timer
+This StreamElements custom widget can be used to visualize some sorts of content gamification (for example, every 20 minutes a new class focus).
 
 Special thanks to [Laiyart](https://www.twitch.tv/laiyart) for the idea.
 
 
 ## Description of operation:
-The widget randomly picks images from an image pool at predetermined time intervals and displays them.
+The widget randomly picks images from an image pool at predetermined time intervals and displays them.  
+It has also options to limit said randomness to a certain degree.
 
 
 ## Chat command types:
