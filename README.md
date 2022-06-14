@@ -8,6 +8,8 @@ Special thanks to [Laiyart](https://www.twitch.tv/laiyart) for the idea.
 The widget randomly picks images from an image pool at predetermined time intervals and displays them.  
 It has also options to limit said randomness to a certain degree.
 
+See also this [demonstration video](https://www.youtube.com/watch?v=YQAS3tV4uDM).
+
 
 ## Chat command types:
  - `!img random` 
