@@ -427,7 +427,7 @@ const trigger = {
         func()
     ]);
     
-    this.concludePhasing();
+    await this.concludePhasing();
   }, 
   
   // Two-step trigger, for "paused after alert" mode (aka "giveaway" mode).
@@ -447,7 +447,7 @@ const trigger = {
         func()
     ]);
     
-    this.concludePhasing();
+    await this.concludePhasing();
     
     // Points to next state.
     this.currState = this.fire_2Phased_1;
@@ -511,7 +511,7 @@ function activateTestMode(hasColorizedSegments) {
 function onWidgetLoad(obj) {
   const fieldData = obj.detail.fieldData;
   
-  // Makes it easier to look up the widget version for the user.
+  // Makes it easier for the user to look up the widget version.
   console.log(`Initialize ${fieldData.widgetName} (v${fieldData.widgetVersion}).`);
   
   if (!isMediaFieldPopulated(fieldData.imgPool)) {
