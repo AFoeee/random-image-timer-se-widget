@@ -2,9 +2,9 @@
   width: 100%;
   height: 95%;
   
-  /* The elements are arranged one below the other. */
+  /* Arranges the elements. */
   display: flex;
-  flex-direction: column;
+  flex-direction: {{timerPosition}};
 }
 
 #display {
@@ -61,14 +61,14 @@
   /* Doesn't grow and is therefore the limiting factor of #display. */
   flex: none;
   
-  font-size: {{fontSize}}px;
-  color: {{fontColor}};
-  text-align: center;
+  font-size: {{timerFontSize}}px;
+  color: {{timerFontColor}};
+  text-align: {{timerAlignment}};
 }
 
 #img-layer, #overlay, #timer {
   /* The 'transitionend' event is used to coordinate functions. Therefore any 
-  * kind of transition is mandatory for the widget to work properly. */
+   * kind of transition is mandatory for the widget to work properly. */
   opacity: 0;
   transition: opacity 1.5s;
 }

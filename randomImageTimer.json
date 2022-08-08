@@ -30,9 +30,15 @@
     "step": 1, 
     "group": "General Settings"
   }, 
-  "startTimerPaused": {
+  "isInitiallyPaused": {
     "type": "checkbox", 
-    "label": "Start paused?", 
+    "label": "Initially paused?", 
+    "value": false, 
+    "group": "General Settings"
+  }, 
+  "isPausedAfterAlert": {
+    "type": "checkbox", 
+    "label": "Pause after timer elapsed? (for giveaways)", 
     "value": false, 
     "group": "General Settings"
   }, 
@@ -87,13 +93,39 @@
     "value": "visible", 
     "group": "Timer Settings"
   }, 
-  "fontFamily": {
+  "sepTimerSettings1": {
+    "type": "hidden", 
+    "label": "————————— Text —————————", 
+    "group": "Timer Settings"
+  }, 
+  "timerPosition": {
+    "type": "dropdown", 
+    "label": "Position:", 
+    "options": {
+      "column-reverse": "top", 
+      "column": "bottom"
+    }, 
+    "value": "column", 
+    "group": "Timer Settings"
+  }, 
+  "timerAlignment": {
+    "type": "dropdown", 
+    "label": "Text alignment:", 
+    "options": {
+      "left": "left", 
+      "center": "center", 
+      "right": "right"
+    }, 
+    "value": "center", 
+    "group": "Timer Settings"
+  }, 
+  "timerFontFamily": {
     "type": "text", 
     "label": "Google font family:", 
     "value": "Roboto", 
     "group": "Timer Settings"
   }, 
-  "fontSize": {
+  "timerFontSize": {
     "type": "number", 
     "label": "Font size in px:", 
     "min": 1, 
@@ -101,21 +133,10 @@
     "step": 1, 
     "group": "Timer Settings"
   }, 
-  "fontColor": {
+  "timerFontColor": {
     "type": "colorpicker", 
     "label": "Font color:", 
     "value": "rgba(255, 255, 255, 1.0)", 
-    "group": "Timer Settings"
-  }, 
-  "sepTimerSettings1": {
-    "type": "hidden", 
-    "label": "———————— Options ————————", 
-    "group": "Timer Settings"
-  }, 
-  "padNumbersWithZero": {
-    "type": "checkbox", 
-    "label": "Pad single-digit numbers with 0?", 
-    "value": true, 
     "group": "Timer Settings"
   }, 
   "sepTimerSettings2": {
@@ -155,11 +176,22 @@
     "step": 1, 
     "group": "Timer Settings"
   }, 
+  "sepTimerSettings3": {
+    "type": "hidden", 
+    "label": "———————— Options ————————", 
+    "group": "Timer Settings"
+  }, 
+  "isNumberPaddedWithZero": {
+    "type": "checkbox", 
+    "label": "Pad single-digit numbers with 0?", 
+    "value": true, 
+    "group": "Timer Settings"
+  }, 
   
-  "triggerButton": {
+  "randomImgButton": {
     "type": "button", 
-    "label": "Trigger change", 
-    "value": "trigger", 
+    "label": "Pick random img", 
+    "value": "randomImg", 
     "group": "Buttons"
   }, 
   "pauseButton": {
@@ -204,7 +236,7 @@
   }, 
   "widgetVersion": {
     "type": "hidden", 
-    "value": 1.0, 
+    "value": 2, 
     "group": "Test Mode"
   }
 }
