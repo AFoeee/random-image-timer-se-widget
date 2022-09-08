@@ -98,6 +98,20 @@
     "label": "————————— Text —————————", 
     "group": "Timer Settings"
   }, 
+  "timerFontFamily": {
+    "type": "googleFont", 
+    "label": "Google font family:", 
+    "value": "Roboto", 
+    "group": "Timer Settings"
+  }, 
+  "timerFontSize": {
+    "type": "number", 
+    "label": "Font size in px:", 
+    "min": 1, 
+    "value": 60, 
+    "step": 1, 
+    "group": "Timer Settings"
+  }, 
   "timerPosition": {
     "type": "dropdown", 
     "label": "Position:", 
@@ -117,20 +131,6 @@
       "right": "right"
     }, 
     "value": "center", 
-    "group": "Timer Settings"
-  }, 
-  "timerFontFamily": {
-    "type": "text", 
-    "label": "Google font family:", 
-    "value": "Roboto", 
-    "group": "Timer Settings"
-  }, 
-  "timerFontSize": {
-    "type": "number", 
-    "label": "Font size in px:", 
-    "min": 1, 
-    "value": 60, 
-    "step": 1, 
     "group": "Timer Settings"
   }, 
   "timerFontColor": {
@@ -215,12 +215,6 @@
       "off": "Disabled"
     }, 
     "value": "off", 
-    "group": "Test Mode"
-  }, 
-  "hasColorizedSegments": {
-    "type": "checkbox", 
-    "label": "Colorize segments for visualization?", 
-    "value": true, 
     "group": "Test Mode"
   }, 
   

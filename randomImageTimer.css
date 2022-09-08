@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family={{timerFontFamily}}');
+
 .main-container {
   width: 100%;
   height: 95%;
@@ -61,6 +63,7 @@
   /* Doesn't grow and is therefore the limiting factor of #display. */
   flex: none;
   
+  font-family: {{timerFontFamily}};
   font-size: {{timerFontSize}}px;
   color: {{timerFontColor}};
   text-align: {{timerAlignment}};

@@ -201,18 +201,6 @@ const overlay = {
 };
 
 
-// Load google font by name and use it for given element.
-function addGoogleFont(elmnt, fontName) {
-  const fontLink = document.createElement('link');
-  fontLink.href = 
-      `https://fonts.googleapis.com/css2?family=${fontName.replaceAll(" ", "+")}`;
-  fontLink.rel = 'stylesheet';
-  document.head.appendChild(fontLink);
-  
-  elmnt.style.fontFamily = fontName;
-}
-
-
 function initializeTimer(minutes, fontName, isVisible, padWithZeros, margins) {
   const timerElmnt = document.getElementById("timer");
   
@@ -220,8 +208,6 @@ function initializeTimer(minutes, fontName, isVisible, padWithZeros, margins) {
   
   // If visible, style the timer.
   if (isVisible && isTimerActivated) {
-    addGoogleFont(timerElmnt, fontName);
-    
     if (margins) {
       timerElmnt.style.marginTop = `${margins.top ?? 0}px`;
       timerElmnt.style.marginRight = `${margins.right ?? 0}px`;
@@ -561,7 +547,7 @@ function onWidgetLoad(obj) {
   initializeTrigger(fieldData.isPausedAfterAlert);
   
   if (fieldData.testMode === 'on') {
-    activateTestMode(fieldData.hasColorizedSegments);
+    activateTestMode(true);
   }
   
   if (fieldData.isInitiallyPaused) {
