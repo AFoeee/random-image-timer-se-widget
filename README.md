@@ -42,3 +42,7 @@ See also this [demonstration video](https://www.youtube.com/watch?v=YQAS3tV4uDM)
    
    A single number is interpreted as seconds.  
    Two numbers are interpreted as minutes and seconds and so on.  
+
+
+## Used libraries:  
+ - [Reboot0's Widget Tools](https://reboot0-de.github.io/se-tools/index.html)  
